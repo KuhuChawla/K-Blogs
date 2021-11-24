@@ -1,13 +1,13 @@
 import React from 'react';
-import Styles from "./styless.module.css"
+import * as tagStyles from "./styless.module.css"
 export class TagPreview extends React.Component {
   render() {
     return React.createElement('ul', {
-      className: Styles.tag,
+      className: tagStyles.tags,
     },
       this.props.value.map(function(value, index) {
         return React.createElement('li', {
-          className: Styles.tag,
+          className: tagStyles.tag,
           key: index
         }, value)
       })

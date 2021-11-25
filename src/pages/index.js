@@ -4,6 +4,10 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import OutlinedCard from "../components/cards"
+import Grid from '@mui/material/Grid';
+import NBar from "../components/nav_bar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -24,16 +28,33 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
+    <div>
+      <NBar/>
+    
     <Layout location={location} title={siteTitle}>
+      
       <Seo title="All posts" />
       <Bio />
-      <ol style={{ listStyle: `none` }}>
+      {/* <ol style={{ listStyle: `none` }}> */}
+      <Grid alignItems= 'stretch' container spacing={{ xs: 2, md: 12 }} columns={{ xs: 4, sm: 8, md: 12 }} rowSpacing = {'16px'}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
-
           return (
-            <li key={post.fields.slug}>
-              <article
+            <Grid alignItems= 'stretch' flexDirection = 'column' item xs={2} sm={4} md={4} key={post.fields.slug}>
+              <OutlinedCard link={post.fields.slug} date={post.frontmatter.date} desc={post.frontmatter.description} tags={post.frontmatter.tags || []} title={title} />
+            </Grid>
+          )
+
+        })}
+      </Grid>
+      {/* {posts.map(post => {
+        const title = post.frontmatter.title || post.fields.slug
+        console.log(post.frontmatter)
+
+        return (
+          <li key={post.fields.slug}>
+            {<OutlinedCard link={post.fields.slug} date={post.frontmatter.date} desc={post.frontmatter.description} tags={post.frontmatter.tags || []} title={title} />
+              /* <article
                 className="post-list-item"
                 itemScope
                 itemType="http://schema.org/Article"
@@ -54,12 +75,11 @@ const BlogIndex = ({ data, location }) => {
                     itemProp="description"
                   />
                 </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
+              </article> */}
+      {/* </li> */}
+
     </Layout>
+    </div>
   )
 }
 
@@ -82,6 +102,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          tags
         }
       }
     }

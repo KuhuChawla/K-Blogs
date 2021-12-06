@@ -32,6 +32,20 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           fieldValue
         }
       }
+      blogResult:allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: ASC }
+        limit: 1000
+      ) {
+        nodes {
+          id
+          fields {
+            slug
+          }
+          frontmatter{
+            title
+          }
+        }
+      }
     }
   `);
 

@@ -2,16 +2,25 @@
  * Bio component that queries for data
  * with Gatsby's useStaticQuery component
  *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Image from 'gatsby-image';
+
+import { rhythm } from '../utils/typography';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
+      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+        childImageSharp {
+          fixed(width: 50, height: 50) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       site {
         siteMetadata {
           author {
@@ -19,40 +28,41 @@ const Bio = () => {
             summary
           }
           social {
-            Linkedin
+            twitter
           }
         }
       }
     }
-  `)
+  `);
 
-  // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
-
+  const { author, social } = data.site.siteMetadata;
   return (
-    <div className="bio">
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.jpg"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
+    <div
+      style={{
+        display: `flex`,
+        marginBottom: rhythm(2.5),
+      }}
+    >
+      <Image
+        fixed={data.avatar.childImageSharp.fixed}
+        alt={author.name}
+        style={{
+          marginRight: rhythm(1 / 2),
+          marginBottom: 0,
+          minWidth: 50,
+          borderRadius: `100%`,
+        }}
+        imgStyle={{
+          borderRadius: `50%`,
+        }}
       />
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://Linkedin.com/in/${social?.Linkedin || ``}`} target={'_blank'}rel="noreferrer" >
-            You should follow them on Linkedin
-          </a>
-        </p>
-      )}
+      <p>
+        Written by <strong>{author.name}</strong> {author.summary}
+        {` `}
+        <a href={`https://twitter.com/${social.twitter}`}>You should follow her on Linkedin</a>
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;

@@ -126,7 +126,18 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Flutter', 'Dart', 'Python', 'C/C++', 'HTML', 'CSS','JavaScript','SQL','Firebase','Data Structures & Algorithm'];
+  const skills = [
+    'Flutter',
+    'Dart',
+    'Python',
+    'C/C++',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'SQL',
+    'Firebase',
+    'Data Structures & Algorithm',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -136,12 +147,13 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Kuhu and I love exploring new technologies. I started my coding journey in 2020. I'm relatively new
-              to the tech world.
+              Hello! My name is Kuhu and I love exploring new technologies. I started my coding
+              journey in 2020. I'm relatively new to the tech world.
             </p>
             <p>
-              Since then, I have explored different domains of coding such as app development, web development,some designing 
-              as well as participates in a few competitive coding contests.
+              Since then, I have explored different domains of coding such as app development, web
+              development,some designing as well as participates in a few competitive coding
+              contests.
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>

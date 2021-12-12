@@ -57,10 +57,10 @@ const BlogLink = () => {
 
       <h2 className="title">Here are Some things I have written</h2>
 
-      <p>I'm actively looking for new opportunities to develop my skills further.</p>
+      <p>I'm trying to publish blogs more actively</p>
 
       <Link className="email-link" to="/blogs">
-        Say Hello
+        Check It Out
       </Link>
     </StyledContactSection>
   );

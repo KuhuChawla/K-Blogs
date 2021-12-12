@@ -4,16 +4,16 @@ module.exports = {
   siteMetadata: {
     title: 'Kuhu Chawla',
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Kuhu Chawla`,
+      summary: `Pre-Final year student pursuing Bachelors of Engineering in Electronics and Communication from UIET, Panjab University,Chandigarh.`,
     },
     description:
       'Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+    siteUrl: 'https://kuhu.tech', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    twitterUsername: '@kuhuchawla01',
     social: {
-      twitter: `kylemathews`,
+      twitter: `kuhuchawla01`,
     },
   },
   plugins: [
@@ -51,8 +51,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'BrittanyChiang',
-        short_name: 'BrittanyChiang',
+        name: 'KuhuChawla',
+        short_name: 'KuhuChawla',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,

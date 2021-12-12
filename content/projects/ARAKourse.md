@@ -7,7 +7,7 @@ tech:
   - Dart
   - Firebase
   - Udemy's API
-company: ''
+company: 'HackOwasp 3.0 organised by Thapar Institute of Technology 2021'
 showInProjects: true
 ---
 

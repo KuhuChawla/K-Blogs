@@ -1,6 +1,6 @@
 ---
 date: '2021-05-14'
-title: 'SWE Intern'
+title: 'Project Intern'
 company: 'DIC, Panjab University'
 location: 'Panjab University,Chandigarh'
 range: 'May 2021 - Present'

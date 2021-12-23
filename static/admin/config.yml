@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: KuhuChawla/K-Blogs
+  name: git-gateway
   branch: main
 
 

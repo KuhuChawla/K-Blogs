@@ -31,7 +31,7 @@ const Blogs = ({ data, location }) => {
               alignItems="stretch"
               flexDirection="column"
               item
-              xs={2}
+              xs={12}
               sm={4}
               md={4}
               key={node.fields.slug}

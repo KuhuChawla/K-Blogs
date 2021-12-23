@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import { rhythm, scale } from '../utils/typography';
+// import { rhythm, scale } from '../utils/typography';
 import '../style.css';
 import '../normalize.css';
 
@@ -15,8 +15,9 @@ const LayoutBlog = ({ location, title, children }) => {
     header = (
       <h1
         style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
+          // ...scale(1.5),
+
+          // marginBottom: rhythm(1.5),
           marginTop: 0,
         }}
       >

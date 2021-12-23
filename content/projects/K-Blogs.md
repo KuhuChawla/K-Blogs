@@ -7,7 +7,7 @@ tech:
   - React
   - Gatsby Framework
   - Netlify
-company: 'Personal'
+company: ''
 showInProjects: true
 ---
 

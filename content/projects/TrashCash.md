@@ -2,11 +2,12 @@
 date: '2020-03-27'
 title: 'Trash Cash, Google Developer Student Solution Challenge 2021'
 github: 'https://github.com/rohitgupta2000/trashCashteam'
+external: 'https://youtu.be/Co22sRBEGIg'
 tech:
   - Flutter
   - Dart
   - Firebase
-company: 'Google Developer Student Challenge 2021'
+company: ''
 showInProjects: true
 ---
 

@@ -10,6 +10,10 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/kuhu-chawla/',
     },
+    {
+      name: 'LeetCode',
+      url: 'https://leetcode.com/kuhuchawla01/',
+    },
   ],
 
   navLinks: [
@@ -36,9 +40,9 @@ module.exports = {
   ],
 
   colors: {
-    green: '#64ffda',
-    navy: '#0a192f',
-    darkNavy: '#020c1b',
+    orange: '#ff4900',
+    navy: '#050505',
+    darkNavy: '#050505',
   },
 
   srConfig: (delay = 200, viewFactor = 0.25) => ({

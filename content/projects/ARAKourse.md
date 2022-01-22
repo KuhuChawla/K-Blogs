@@ -1,5 +1,5 @@
 ---
-date: '2017-11-01'
+date: '2020-03-29'
 title: 'ARAKourse, HackOwasp 3.0 organised by Thapar Institute of Technology 2021'
 github: 'https://github.com/RaghavGupta70/Hacko-1-Hephaestus'
 external: 'https://youtu.be/PbSatr0ddfw'

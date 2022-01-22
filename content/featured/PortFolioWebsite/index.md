@@ -3,6 +3,7 @@ date: '2'
 title: 'Portfolio Website'
 cover: './demo.png'
 github: 'https://github.com/KuhuChawla/K-Blogs'
+external: 'https://kuhu.tech/'
 tech:
   - React
   - Gatsby Framework

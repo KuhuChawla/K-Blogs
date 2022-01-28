@@ -52,7 +52,7 @@ const BlogLink = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
   return (
-    <StyledContactSection id="contact" ref={revealContainer}>
+    <StyledContactSection id="blogs" ref={revealContainer}>
       <h2 className="numbered-heading overline">My Blogs</h2>
 
       <h2 className="title">Here are Some things I have written</h2>

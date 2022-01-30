@@ -14,6 +14,14 @@ module.exports = {
       name: 'LeetCode',
       url: 'https://leetcode.com/kuhuchawla01/',
     },
+    {
+      name: 'Twitter',
+      url: 'https://twitter.com/kuhuchawla01',
+    },
+    {
+      name: 'GeeksForGeeks',
+      url: 'https://auth.geeksforgeeks.org/user/kuhuchawla01/profile'
+    }
   ],
 
   navLinks: [

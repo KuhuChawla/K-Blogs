@@ -12,6 +12,7 @@ export { default as IconLoader } from './loader';
 export { default as IconLogo } from './logo';
 export { default as IconPlayStore } from './playstore';
 export { default as IconStar } from './star';
+export { default as IconGFG } from './gfg';
 export { default as IconTwitter } from './twitter';
 export { default as IconLeetCode } from './leetcode';
-export { default as IconGFG } from './geeksforgeeks';
+

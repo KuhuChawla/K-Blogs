@@ -52,7 +52,7 @@ const Icon = ({ name }) => {
     case 'LeetCode':
       return <IconLeetCode />;
     case 'GeeksForGeeks':
-      return <IconGFG/>;
+      return <IconGFG />;
     default:
       return <IconExternal />;
   }
